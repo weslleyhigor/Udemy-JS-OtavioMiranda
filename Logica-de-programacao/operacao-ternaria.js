@@ -6,4 +6,4 @@ const corPadrao = corUsuario || 'Preta';
 
 console.log(nivelUsuario);
 
-// TODO O IF EM UMA SÓ LINHA;
+// TODO O IF EM UMA SÓ LINHA; É RETORNADO UM VALOR BOOLEANO.
