@@ -1,6 +1,6 @@
 //Strings
 const nomeUm = 'Higor';
-const nomeDois = "Higpr";
+const nomeDois = "Higor";
 const nomeTres = `Higor`;
 
 //Number
