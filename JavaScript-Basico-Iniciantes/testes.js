@@ -1,6 +1,12 @@
-let num = 8.758459;
+let nome = ["weslley", "higor", "campos", "ferreira"];
+let contaLetra = 0;
 
-const resultado = num.toFixed(2);
+console.log(nome.length);
 
-//console.log(resultado);
-console.log(num.toFixed(2));
+i = 0;
+for (let indice in nome[i]){
+    contaLetra += nome[indice].length;
+    i += 1
+}
+
+console.log(contaLetra);
