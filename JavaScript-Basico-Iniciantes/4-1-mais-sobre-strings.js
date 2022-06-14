@@ -1,4 +1,3 @@
-// 
 const text = "Entao ele disse: \"Deu bom!\""; // A barra invertida permite aspas duplas para declarar string e sitação junto.
 console.log(text);
 
@@ -18,3 +17,9 @@ console.log(string.slice(-6, -1));
 // Dividir strings
 let texto = "O rato roeu a roupa do rei de roma.";
 console.log(texto.split(' ')); // O split separa as palavras a partir do caractere desejado e retorna um array
+
+texto = texto.toUpperCase(); // Transforma todos os caracteres em Maiusculos.
+console.log(texto); 
+
+texto = texto.toLowerCase(); // Transforma todos os caracteres em Minusculos.
+console.log(texto); 
