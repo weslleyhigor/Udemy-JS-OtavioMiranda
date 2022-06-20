@@ -11,15 +11,8 @@ const soma = function (x, y) {
     return resultado;
 };*/
 
+const soma = (num1, num2) => num1 + num2; 
+console.log(soma(5, 7));
 
-const raiz = n => n ** 0.5;
-
-console.log(raiz(4));
-console.log(raiz(9));
-console.log(raiz(16));
-console.log(raiz(25));
-console.log(raiz(36));
-console.log(raiz(49));
-console.log(raiz(64));
-console.log(raiz(81));
-console.log(raiz(100));
+//const raiz = n => n ** 0.5;
+//console.log(raiz(49));
