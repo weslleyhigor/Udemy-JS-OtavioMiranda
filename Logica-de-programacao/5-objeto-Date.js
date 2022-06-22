@@ -1,18 +1,18 @@
 //https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Date
 
-/*
-const data = new Date();
 
-console.log(data.toString());
-console.log( 'Dia: ', data.getDate());
-console.log( 'Mês: ', data.getMonth()); // Mês começa do zero. Pra ficar no conhecido, pode ser feito data.getMonth() + 1;
-console.log( 'Ano: ', data.getFullYear());
-console.log( 'Hora: ', data.getHours());
-console.log( 'Min: ', data.getMinutes());
-console.log( 'Seg: ', data.getSeconds());
-console.log( 'Mil: ', data.getMilliseconds());
-console.log( 'Dia da Semana: ', data.getDay()); // 0 = Domingo até Sábado = 6
-*/
+// const data = new Date();
+
+// console.log(data.toString());
+// console.log( 'Dia: ', data.getDate());
+// console.log( 'Mês: ', data.getMonth()); // Mês começa do zero. Pra ficar no conhecido, pode ser feito data.getMonth() + 1;
+// console.log( 'Ano: ', data.getFullYear());
+// console.log( 'Hora: ', data.getHours());
+// console.log( 'Min: ', data.getMinutes());
+// console.log( 'Seg: ', data.getSeconds());
+// console.log( 'Mil: ', data.getMilliseconds());
+// console.log( 'Dia da Semana: ', data.getDay()); // 0 = Domingo até Sábado = 6
+
 
 //  Função que formata data
 
