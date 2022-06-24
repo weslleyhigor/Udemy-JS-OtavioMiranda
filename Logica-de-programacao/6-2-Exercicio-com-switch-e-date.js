@@ -68,7 +68,7 @@ function relogio () {
       case 5:
         return diaSemanaText = 'Quinta-feira';
       case 6:
-        return diaSemanaText = 'Sexta=feira';
+        return diaSemanaText = 'Sexta-feira';
       case 7:
         return diaSemanaText = 'Sábado';
       default:
@@ -110,4 +110,4 @@ function relogio () {
   };
 }
 
-setInterval(relogio, 1000)
+setInterval(relogio, 1000) // roda o codigo a cada 1 Segundo
