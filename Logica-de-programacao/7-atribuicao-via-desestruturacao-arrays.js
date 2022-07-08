@@ -12,4 +12,3 @@ const listNumbers = [1000, 2000, 3000, 4000, 5000, 6000, 7000];
 
 [indZero, indUm, indDois, ... restoArray] = listNumbers; // restoArray recebeu todos os valores do indice 3 até o final em formato de array.
 console.log(indZero, indUm, indDois, restoArray)
-
