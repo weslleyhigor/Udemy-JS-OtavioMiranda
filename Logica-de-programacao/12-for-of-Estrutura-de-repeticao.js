@@ -1,3 +1,5 @@
+// Comparativo de cada for usando realizando a mesma tarefa
+
 // Indices    0123456789...
 const nomes = ['Weslley Higor', 'Vitoria Albuquerque', 'Joao Dorilito'];
  
