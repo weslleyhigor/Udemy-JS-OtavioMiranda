@@ -1,13 +1,20 @@
 // Indices    0123456789...
-const nome = 'Weslley Higor';
-
+const nomes = ['Weslley Higor', 'Vitoria Albuquerque', 'Joao Dorilito'];
+ 
 // for classico
-for ( let i = 0; i < nome.length; i++) {
-    console.log(nome[i]);
+for ( let i = 0; i < nomes.length; i++) {
+    console.log(nomes[i]);
 };
-
+console.log('-----------------------------------')
 
 // for usando in
-for ( let i in nome) {
-    console.log(nome[i]);
+for ( let i in nomes) {
+    console.log(nomes[i]);
 }
+console.log('-----------------------------------')
+
+// for usando of
+for (let valor of nomes) {
+    console.log(valor);
+}
+
