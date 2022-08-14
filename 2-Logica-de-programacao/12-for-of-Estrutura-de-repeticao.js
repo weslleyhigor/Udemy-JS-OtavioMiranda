@@ -19,4 +19,10 @@ console.log('-----------------------------------')
 for (let valor of nomes) {
     console.log(valor);
 }
+console.log('-----------------------------------')
 
+
+// for usando função. e = elemento | i = indice
+nomes.forEach(function(e, i) {
+    console.log(i, e);
+});
