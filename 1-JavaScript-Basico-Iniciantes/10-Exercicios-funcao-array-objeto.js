@@ -36,4 +36,4 @@ function meuEscopo () {
     
 }
 
-meuEscopo();
+meuEscopo();                                                                                                                                                              
