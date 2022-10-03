@@ -1,6 +1,5 @@
-const formulario = document.querySelector('#form');
+const x = 9;
 
-const nome = formulario.querySelector('#nome');
-const senha = formulario.querySelector('senha');
-console.log(nome);
-console.log(senha);
+let comparaX = x === 10 ? 'É igual a 10' : 'É diferente de 10';
+
+console.log(comparaX);
