@@ -19,8 +19,8 @@ function relogio () {
 
   text.innerHTML = `<p>${diaText}, ${dia} de ${mesText} de ${ano}</p>`;
   text.innerHTML += `<h1>${hora}:${minutos}:${segundos}</h1>`;
-  text.innerHTML += `<p>${fusoLocal[0]}</p>`
-  text.innerHTML += `<p>${fusoLocal[1]}</p>`
+  text.innerHTML += `<p>${fusoLocal[0]}</p>`;
+  text.innerHTML += `<p>${fusoLocal[1]}</p>`;
 
   function zeroAEsquerda (valor) {
     return valor >= 10? valor : `0${valor}`;
