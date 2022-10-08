@@ -1,5 +1,4 @@
-const x = 9;
+let num = 1;
+let string = '0';
 
-let comparaX = x === 10 ? 'É igual a 10' : 'É diferente de 10';
-
-console.log(comparaX);
+console.log(string + num);

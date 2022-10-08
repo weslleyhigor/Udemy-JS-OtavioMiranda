@@ -1,26 +1,29 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-device, initial=scale=1.0">
-    <meta http-equiv="X-UA-compatible" content="ie=edge">
-    <link rel="stylesheet" href="teste.css">
-
-    <title>Document</title>
-</head>
 <body>
 
-    <div>
-        <formp id="form" action="" method="get">
-            <label for="nome">Nome:</label>
-            <input name="nome" id="nome" type="text">
-            <label for="senha">Senha:</label>
-            <input name="senha" id="senha" type="text">
-            <button type="submit">Entrar</button>
-        </form>
-    </div>
+    <h1>The Window Object</h1>
+    <h2>The setInterval() and clearInterval() Methods</h2>
 
+    <p id="demo"></p>
 
-    <script src="teste.js"></script>
-</body> 
-</html>   
+    <button onclick="startTimer()">Start the time</button>
+    <button onclick="stopTimer()">Stop the time</button>
+
+    <script>
+        function myTimer() {
+            const date = new Date();
+            document.getElementById("demo").innerHTML = date.toLocaleTimeString();
+        }
+        
+        function startTimer() {
+            const myInterval = setInterval(myTimer, 1000);
+            return myInterval;
+        }
+
+        function stopTimer(myInterval) {
+            clearInterval(myInterval);
+        }
+    </script>
+
+</body>
+
+</html>

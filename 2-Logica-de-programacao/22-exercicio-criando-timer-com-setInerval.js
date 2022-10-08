@@ -1,15 +1,32 @@
 const timer = document.querySelector('.timer');
-const iniciar = document.querySelector('.iniciar');
-const pausar = document.querySelector('.pausar');
-const zerar = document.querySelector('.zerar');
+const iniciar = document.querySelector('#iniciar');
+const pausar = document.querySelector('#pausar');
+const zerar = document.querySelector('#zerar');
+
+
+function zeroAEsquerda(num){
+    return num >= 10? num: `0${num}`; 
+}
 
 let hora = 0;
 let minuto = 0;
 let segundo = 0;
 
-// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+let horas;
+let minutos; 
+let segundos;
 
-function codTimer (){
+horas = zeroAEsquerda(hora); 
+minutos = zeroAEsquerda(minuto);
+segundos = zeroAEsquerda(segundo);
+
+timer.innerHTML = `${horas}:${minutos}:${segundos}`; 
+
+function codTimer() {
+    horas = zeroAEsquerda(hora); 
+    minutos = zeroAEsquerda(minuto);
+    segundos = zeroAEsquerda(segundo);
+    
     segundo++;
     if (segundo > 59) {
         minuto++;
@@ -27,25 +44,42 @@ function codTimer (){
         segundo = 0;
     }
 
-    timer.innerHTML = `${hora}:${minuto}:${segundo}`;
+    timer.innerHTML = `${horas}:${minutos}:${segundos}`; 
 };
 
-const runCode;
 
-iniciar.addEventListener('click', function(event){
-    runCode = setInterval(codTimer, 1000); 
-    return runCode;
-});
+let starter;   
 
-pausar.addEventListener('click', function(event){
-    clearInterval(startTimer);
-});
+function startTimer(){
+    starter = setInterval(codTimer, 1000);
+}
 
+function stopTimer(){
+    clearInterval(starter);
+} 
 
-zerar.addEventListener('click', function(event){
-    clearInterval(startTimer);
+function resetTimer(){
+    clearInterval(starter);
+
     hora = 0;
     minuto = 0;
     segundo = 0;
-    timer.innerHTML = `${hora}:${minuto}:${segundo}`;
+
+    horas = zeroAEsquerda(hora); 
+    minutos = zeroAEsquerda(minuto);
+    segundos = zeroAEsquerda(segundo);
+    timer.innerHTML = `${horas}:${minutos}:${segundos}`;
+}
+
+
+iniciar.addEventListener('click', function(){
+    startTimer();
+});
+
+pausar.addEventListener('click', function(){
+    stopTimer();
+});
+
+zerar.addEventListener('click', function(){
+    resetTimer();
 });
