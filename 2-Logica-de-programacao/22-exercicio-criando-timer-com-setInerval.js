@@ -26,7 +26,9 @@ function codTimer() {
     horas = zeroAEsquerda(hora); 
     minutos = zeroAEsquerda(minuto);
     segundos = zeroAEsquerda(segundo);
-    
+
+    timer.innerHTML = `${horas}:${minutos}:${segundos}`; 
+
     segundo++;
     if (segundo > 59) {
         minuto++;
@@ -43,14 +45,13 @@ function codTimer() {
         minuto = 0;
         segundo = 0;
     }
-
-    timer.innerHTML = `${horas}:${minutos}:${segundos}`; 
 };
 
 
 let starter;   
 
 function startTimer(){
+    clearInterval(starter);
     starter = setInterval(codTimer, 1000);
 }
 
