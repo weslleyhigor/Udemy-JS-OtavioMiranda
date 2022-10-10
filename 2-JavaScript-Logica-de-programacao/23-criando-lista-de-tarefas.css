@@ -56,6 +56,10 @@ body{
   text-decoration: none;
 }
 
+#tarefas {
+  text-align: left;
+  font-weight: bolder;
+}
 
 form input, form label, form button {
   display: block;
@@ -128,4 +132,10 @@ form button:hover {
   #nome {
     text-decoration: none;
   }
+
+  #tarefas {
+    text-align: left;
+    font-weight: bold;
+  }
+
 }
