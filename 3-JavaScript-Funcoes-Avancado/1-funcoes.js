@@ -1,3 +1,4 @@
+// Formas de declarar funçoes em JavaScript
 // Declaração de função (Function hoisting)
 function falaOi(){
     console.log('Oi');
